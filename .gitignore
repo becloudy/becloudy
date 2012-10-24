@@ -1,0 +1,14 @@
+.rvmrc
+.bundle
+Gemfile.lock
+db/*.sqlite3
+log/*.log
+tmp/
+.sass-cache/
+public/stylesheets/*.css
+public/assets/
+public/cache/
+.DS_Store
+*~
+*.swp
+*.gem

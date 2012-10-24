@@ -1,0 +1,25 @@
+doctype html
+html lang="en"
+  head
+    title BeCloudy
+    meta charset="utf-8"
+    link rel="stylesheet" type="text/css" href="/css/styles.css"
+  
+  body
+    .wrap
+      #header
+        img src="/images/logo.gif" width="220" height="65" id="logo"
+        
+        nav
+          ul
+            li
+              a href="/#get-in-touch" Get in touch
+      #content
+        ==yield
+
+    #footer
+      .wrap
+        p.left ©2012 BeCloudy, LLC. All rights reserved
+        p.right 
+          | Follow us at 
+          a href="http://twitter.com/becloudy" @becloudy
