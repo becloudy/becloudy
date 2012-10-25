@@ -12,6 +12,10 @@ module BeCloudy
       content_type 'text/css', :charset => 'utf-8'
       sass(:"stylesheets/#{params[:name]}")
     end
+
+    not_found do
+      redirect '/'
+    end
   end
 end
 
