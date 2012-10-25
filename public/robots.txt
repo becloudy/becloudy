@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: 
+Sitemap: http://becloudy.com/sitemap.xml
