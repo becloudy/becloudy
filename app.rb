@@ -2,6 +2,11 @@ require 'sinatra'
 require 'slim'
 require 'sass'
 
+if ENV['RACK_ENV'] == 'production'
+  require 'newrelic_rpm'
+  NewRelic::Agent.manual_start :app_name => 'becloudy'
+end
+
 module BeCloudy
   class App < Sinatra::Application
     get '/' do
@@ -18,4 +23,3 @@ module BeCloudy
     end
   end
 end
-
